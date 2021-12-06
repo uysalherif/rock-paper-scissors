@@ -8,22 +8,31 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <p class="select">SELECT WEAPON</p>
-    <div>
-      <ul>
-        <li class="select select-one">
+    <main>
+      <header>
+        <p class="select">SELECT WEAPON</p>
+      </header>
+
+      <ul class="boxes">
+        <li id="Rock" class="weapons">
           <img src="img/rock.svg" alt="Rock" />
         </li>
-        <li class="select select-two">
+        <li id="Paper" class="weapons">
           <img src="img/paper.svg" alt="Paper" />
         </li>
-        <li class="select select-three">
+        <li id="Scissors" class="weapons">
           <img src="img/scissors.svg" alt="Scissors" />
         </li>
       </ul>
+    </main>
+    <div class="score-board">
+      <section>
+        <p class="round"></p>
+        <p class="score"></p>
+        <p id="result"></p>
+        <p class="try-again"></p>
+      </section>
     </div>
-    <p class="round">Round 1</p>
-    <p id="result"></p>
 
     <script src="script.js"></script>
   </body>
