@@ -75,9 +75,8 @@ function restart() {
     color: rgb(255, 17, 0);
     border-radius: 80px;
     padding: 15px;
-    width: 100px;
     margin: auto;
-    font-size: 15px;`;
+ `;
 
   tryAgain.innerHTML = 'Restart';
 
@@ -87,9 +86,8 @@ function restart() {
     color: rgb(255, 17, 0);
     border-radius: 80px;
     padding: 15px;
-    width: 100px;
     margin: auto;
-    font-size: 20px;`;
+    font-size: 50px;`;
   };
 
   tryAgain.addEventListener('click', () => {
@@ -109,10 +107,14 @@ function restart() {
 function changeSectionBG(color) {
   section.style.cssText = `
       background-color : ${color};
-      width: 300px;
-      border-radius: 30px;
-      padding: 0 5px 15px 5px;
-      margin-top: 15px;`;
+      width: 40%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50px;
+      padding: 15px 20px;`;
 }
 
 for (let i = 0; i < weapons.length; i++) {
